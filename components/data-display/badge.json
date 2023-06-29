@@ -1,0 +1,106 @@
+{
+  "id": "daisyui-badge",
+  "displayName": "Badge",
+  "description": "Alert informs users about important events.",
+  "category": "Daisy UI / Data Display",
+  "tag": "span",
+  "classNames": "badge",
+  "content": {
+    "type": "value",
+    "value": "Badge"
+  },
+  "options": [
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Neutral",
+          "value": "badge-neutral"
+        },
+        {
+          "label": "Primary",
+          "value": "badge-primary"
+        },
+        {
+          "label": "Secondary",
+          "value": "badge-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "badge-accent"
+        },
+        {
+          "label": "Ghost",
+          "value": "badge-ghost"
+        },
+        {
+          "label": "Info",
+          "value": "badge-info"
+        },
+        {
+          "label": "Success",
+          "value": "badge-success"
+        },
+        {
+          "label": "Warning",
+          "value": "badge-warning"
+        },
+        {
+          "label": "Error",
+          "value": "badge-error"
+        }
+      ]
+    },
+    {
+      "name": "style",
+      "label": "Style",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Outline",
+          "value": "badge-outline"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Extra Small",
+          "value": "badge-xs"
+        },
+        {
+          "label": "Small",
+          "value": "badge-sm"
+        },
+        {
+          "label": "Medium",
+          "value": "badge-md"
+        },
+        {
+          "label": "Large",
+          "value": "badge-xl"
+        }
+      ]
+    }
+  ]
+}

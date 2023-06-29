@@ -81,8 +81,11 @@ class Gust_Daisyui {
 	 */
 	public function register_components( $gust_components ) {
 		$component_dirs = array(
-			'actions' => array(
+			'actions'      => array(
 				'button',
+			),
+			'data-display' => array(
+				'badge',
 			),
 		);
 

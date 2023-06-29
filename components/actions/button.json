@@ -104,6 +104,10 @@
           "value": "btn-sm"
         },
         {
+          "label": "Medium",
+          "value": "btn-md"
+        },
+        {
           "label": "Large",
           "value": "btn-xl"
         }
