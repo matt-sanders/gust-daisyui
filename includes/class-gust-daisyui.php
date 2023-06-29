@@ -88,6 +88,7 @@ class Gust_Daisyui {
 				'badge',
 				// 'collapse',
 				'kbd',
+				'loading',
 			),
 		);
 

@@ -1,0 +1,70 @@
+{
+  "id": "daisyui-loading",
+  "displayName": "Loading",
+  "description": "Loading shows an animation to indicate that something is loading.",
+  "category": "Daisy UI / Data Display",
+  "tag": "span",
+  "classNames": "loading",
+  "options": [
+    {
+      "name": "style",
+      "label": "Style",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Spinner",
+          "value": "loading-spinner"
+        },
+        {
+          "label": "Dots",
+          "value": "loading-dots"
+        },
+        {
+          "label": "Ring",
+          "value": "loading-ring"
+        },
+        {
+          "label": "Ball",
+          "value": "loading-ball"
+        },
+        {
+          "label": "Bars",
+          "value": "loading-bars"
+        },
+        {
+          "label": "Infinity",
+          "value": "loading-infinity"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Extra Small",
+          "value": "loading-xs"
+        },
+        {
+          "label": "Small",
+          "value": "loading-sm"
+        },
+        {
+          "label": "Medium",
+          "value": "loading-md"
+        },
+        {
+          "label": "Large",
+          "value": "loading-xl"
+        }
+      ]
+    }
+  ]
+}
