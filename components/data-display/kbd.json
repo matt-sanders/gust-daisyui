@@ -1,0 +1,42 @@
+{
+  "id": "Kbd",
+  "displayName": "Kbd",
+  "description": "Kbd is used to display keyboard shortcuts.",
+  "category": "Daisy UI / Data Display",
+  "tag": "kbd",
+  "classNames": "kbd",
+  "content": {
+    "type": "value",
+    "value": "Shift"
+  },
+  "options": [
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Extra Small",
+          "value": "kbd-xs"
+        },
+        {
+          "label": "Small",
+          "value": "kbd-sm"
+        },
+        {
+          "label": "Medium",
+          "value": "kbd-md"
+        },
+        {
+          "label": "Large",
+          "value": "kbd-xl"
+        }
+      ]
+    }
+  ]
+}
