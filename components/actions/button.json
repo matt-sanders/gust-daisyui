@@ -1,0 +1,166 @@
+{
+  "id": "daisyui-button",
+  "displayName": "Button",
+  "description": "Displays a link that looks like a button.",
+  "category": "Daisy UI / Buttons",
+  "tag": "a",
+  "classNames": "btn",
+  "content": {
+    "type": "value",
+    "value": "Button"
+  },
+  "options": [
+    {
+      "name": "Link",
+      "label": "href",
+      "modify": "attribute",
+      "attributeName": "href",
+      "type": "text"
+    },
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Neutral",
+          "value": "btn-neutral"
+        },
+        {
+          "label": "Primary",
+          "value": "btn-primary"
+        },
+        {
+          "label": "Seconday",
+          "value": "btn-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "btn-accent"
+        },
+        {
+          "label": "Ghost",
+          "value": "btn-ghost"
+        },
+        {
+          "label": "Link",
+          "value": "btn-link"
+        },
+        {
+          "label": "Info",
+          "value": "btn-info"
+        },
+        {
+          "label": "Success",
+          "value": "btn-success"
+        },
+        {
+          "label": "Warning",
+          "value": "btn-warning"
+        },
+        {
+          "label": "Error",
+          "value": "btn-error"
+        }
+      ]
+    },
+    {
+      "name": "style",
+      "label": "Style",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Outline",
+          "value": "btn-outline"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Extra Small",
+          "value": "btn-xs"
+        },
+        {
+          "label": "Small",
+          "value": "btn-sm"
+        },
+        {
+          "label": "Large",
+          "value": "btn-xl"
+        }
+      ]
+    },
+    {
+      "name": "width",
+      "label": "Width",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Wide",
+          "value": "btn-wide"
+        },
+        {
+          "label": "Block",
+          "value": "btn-block"
+        }
+      ]
+    },
+    {
+      "name": "effect",
+      "label": "Effect",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "None",
+          "value": ""
+        },
+        {
+          "label": "Glass",
+          "value": "btn-glass"
+        }
+      ]
+    },
+    {
+      "name": "target",
+      "label": "Open in new tab?",
+      "modify": "attribute",
+      "attributeName": "target",
+      "type": "select",
+      "options": [
+        {
+          "label": "This tab",
+          "value": ""
+        },
+        {
+          "label": "New tab",
+          "value": "_blank"
+        }
+      ]
+    }
+  ]
+}

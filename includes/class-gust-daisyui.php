@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Gust Daisy UI
  * 
@@ -12,12 +13,21 @@ defined( 'ABSPATH' ) || exit;
  */
 class Gust_Daisyui {
 
+
+
 	/**
 	 * The single instance of the class
 	 * 
 	 * @var Gust Daisyui
 	 */
 	protected static $_instance = null; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
+
+	/**
+	 * The path to the plugin file
+	 *
+	 * @var string
+	 */
+	private $plugin_path;
 
 
 	/**
@@ -37,8 +47,9 @@ class Gust_Daisyui {
 	 * Gust Daisyui constructor
 	 */
 	public function __construct() {
-		$this->define_constants();  
+		$this->define_constants();
 		$this->includes();
+		$this->register_hooks();
 	}
 
 	/**
@@ -56,5 +67,37 @@ class Gust_Daisyui {
 	private function includes() {
 	}
 
+	/**
+	 * Registers hooks
+	 */
+	private function register_hooks() {
+		add_action( 'gust_register_components', [ $this, 'register_components' ] );
+	}
+
+	/** 
+	 * Registers components
+	 *
+	 * @param Gust_Components $gust_components An instance of the gust components class.
+	 */
+	public function register_components( $gust_components ) {
+		$component_dirs = array(
+			'actions' => array(
+				'button',
+			),
+		);
+
+		foreach ( $component_dirs as $component_dir => $components ) {
+			foreach ( $components as $component ) {
+				$content = file_get_contents( GUST_DAISYUI_PLUGIN_ABSPATH . 'components/' . $component_dir . '/' . $component . '.json' );
+				if ( ! $content ) {
+					continue;
+				}
+				$layout = json_decode( $content, true );
+				if ( $layout ) {
+					$gust_components->register_component( $layout['id'], $layout );
+				}
+			}
+		}
+	}
 }
 Gust_Daisyui::instance();
