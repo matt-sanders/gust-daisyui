@@ -89,6 +89,7 @@ class Gust_Daisyui {
 				// 'collapse',
 				'kbd',
 				'loading',
+				'progress',
 			),
 		);
 

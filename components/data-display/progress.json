@@ -1,0 +1,62 @@
+{
+  "id": "daisyui-progress",
+  "displayName": "Progress",
+  "description": "Progress bar can be used to show the progress of a task or to show the passing of time.",
+  "category": "Daisy UI / Data Display",
+  "tag": "progress",
+  "classNames": "progress",
+  "options": [
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Primary",
+          "value": "progress-primary"
+        },
+        {
+          "label": "Secondary",
+          "value": "progress-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "progress-accent"
+        },
+        {
+          "label": "Info",
+          "value": "progress-info"
+        },
+        {
+          "label": "Success",
+          "value": "progress-success"
+        },
+        {
+          "label": "Warning",
+          "value": "progress-warning"
+        },
+        {
+          "label": "Error",
+          "value": "progress-error"
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "type": "value",
+      "name": "value",
+      "value": "0"
+    },
+    {
+      "type": "value",
+      "name": "max",
+      "value": "100"
+    }
+  ]
+}
