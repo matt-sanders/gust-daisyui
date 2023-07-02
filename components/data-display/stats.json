@@ -1,0 +1,79 @@
+{
+  "id": "daisyui-stats",
+  "displayName": "Stat",
+  "description": "Stat is used to show numbers and data in a box.",
+  "category": "Daisy UI / Data Display",
+  "tag": "div",
+  "classNames": "stats shadow",
+  "hasRepeater": true,
+  "options": [
+    {
+      "name": "direction",
+      "label": "Direction",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Horizontal",
+          "value": ""
+        },
+        {
+          "label": "Vertical",
+          "value": "stats-vertical"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-stats-stat",
+      "tag": "div",
+      "useRepeater": true,
+      "classNames": "stat",
+      "children": [
+        {
+          "id": "daisyui-stats-figure",
+          "tag": "div",
+          "classNames": "stat-figure",
+          "allowChildren": true
+        },
+        {
+          "id": "daisyui-stats-title",
+          "tag": "div",
+          "classNames": "stat-title",
+          "allowRepeaterContent": true,
+          "content": {
+            "type": "value",
+            "value": "Stat title"
+          }
+        },
+        {
+          "id": "daisyui-stats-value",
+          "tag": "div",
+          "classNames": "stat-value",
+          "allowRepeaterContent": true,
+          "content": {
+            "type": "value",
+            "value": "Stat value"
+          }
+        },
+        {
+          "id": "daisyui-stats-desc",
+          "tag": "div",
+          "classNames": "stat-desc",
+          "allowRepeaterContent": true,
+          "content": {
+            "type": "value",
+            "value": "Stat description"
+          }
+        },
+        {
+          "id": "daisyui-stats-actions",
+          "tag": "div",
+          "classNames": "stat-actions",
+          "allowChildren": true
+        }
+      ]
+    }
+  ]
+}

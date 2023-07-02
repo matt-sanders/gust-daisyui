@@ -90,6 +90,7 @@ class Gust_Daisyui {
 				'kbd',
 				'loading',
 				'progress',
+				'stats',
 			),
 		);
 
