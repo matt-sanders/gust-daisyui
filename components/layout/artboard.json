@@ -1,0 +1,75 @@
+{
+  "id": "daisyui-artboard",
+  "displayName": "Artboard",
+  "description": "Artboard provides fixed size container to display a demo content on mobile size.",
+  "category": "Daisy UI / Layout",
+  "tag": "div",
+  "classNames": "artboard",
+  "allowChildren": true,
+  "options": [
+    {
+      "name": "style",
+      "label": "Style",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "None",
+          "value": ""
+        },
+        {
+          "label": "Demo",
+          "value": "artboard-demo"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Phone 1",
+          "value": "phone-1"
+        },
+        {
+          "label": "Phone 2",
+          "value": "phone-2"
+        },
+        {
+          "label": "Phone 3",
+          "value": "phone-3"
+        },
+        {
+          "label": "Phone 4",
+          "value": "phone-4"
+        },
+        {
+          "label": "Phone 5",
+          "value": "phone-5"
+        },
+        {
+          "label": "Phone 6",
+          "value": "phone-6"
+        }
+      ]
+    },
+    {
+      "name": "orientation",
+      "label": "Orientation",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Horizontal",
+          "value": "artboard-horizontal"
+        }
+      ]
+    }
+  ]
+}

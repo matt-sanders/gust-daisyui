@@ -93,6 +93,9 @@ class Gust_Daisyui {
 				'stats',
 				'tooltip',
 			),
+			'layout'       => array(
+				'artboard',
+			),
 		);
 
 		foreach ( $component_dirs as $component_dir => $components ) {
