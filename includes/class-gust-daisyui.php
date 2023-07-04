@@ -91,6 +91,7 @@ class Gust_Daisyui {
 				'loading',
 				'progress',
 				'stats',
+				'tooltip',
 			),
 		);
 

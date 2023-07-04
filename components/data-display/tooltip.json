@@ -1,0 +1,82 @@
+{
+  "id": "daisyui-tooltip",
+  "displayName": "Tooltip",
+  "description": "Tooltip can be used to show a message when hovering over an element.",
+  "category": "Daisy UI / Data Display",
+  "tag": "div",
+  "classNames": "tooltip",
+  "allowChildren": true,
+  "attributes": [
+    {
+      "name": "data-tip",
+      "type": "value",
+      "value": "Tooltip value"
+    }
+  ],
+  "options": [
+    {
+      "name": "position",
+      "label": "Position",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Top",
+          "value": "tooltip-top"
+        },
+        {
+          "label": "Right",
+          "value": "tooltip-right"
+        },
+        {
+          "label": "Bottom",
+          "value": "tooltip-bottom"
+        },
+        {
+          "label": "Left",
+          "value": "tooltip-left"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Primary",
+          "value": "tooltip-primary"
+        },
+        {
+          "label": "Seconday",
+          "value": "tooltip-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "tooltip-accent"
+        },
+        {
+          "label": "Info",
+          "value": "tooltip-info"
+        },
+        {
+          "label": "Success",
+          "value": "tooltip-success"
+        },
+        {
+          "label": "Warning",
+          "value": "tooltip-warning"
+        },
+        {
+          "label": "Error",
+          "value": "tooltip-error"
+        }
+      ]
+    }
+  ]
+}
