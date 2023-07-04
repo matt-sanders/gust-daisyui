@@ -95,6 +95,7 @@ class Gust_Daisyui {
 			),
 			'layout'       => array(
 				'artboard',
+				'divider',
 			),
 		);
 

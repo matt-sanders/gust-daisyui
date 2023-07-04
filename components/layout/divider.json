@@ -1,0 +1,30 @@
+{
+  "id": "daisyui-divider",
+  "displayName": "Divider",
+  "description": "Divider will be used to separate content vertically or horizontally.",
+  "category": "Daisy UI / Layout",
+  "tag": "div",
+  "classNames": "divider",
+  "content": {
+    "type": "value",
+    "value": "OR"
+  },
+  "options": [
+    {
+      "name": "orientation",
+      "label": "Orientation",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Vertical",
+          "value": ""
+        },
+        {
+          "label": "Horizontal",
+          "value": "divider-horizontal"
+        }
+      ]
+    }
+  ]
+}
