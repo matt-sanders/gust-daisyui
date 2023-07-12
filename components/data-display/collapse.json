@@ -1,0 +1,60 @@
+{
+  "id": "daisyui-collapse",
+  "displayName": "Collapse",
+  "description": "Collapse is used for showing and hiding content.",
+  "category": "Daisy UI / Data Display",
+  "tag": "div",
+  "classNames": "collapse bg-base-200",
+  "attributes": [
+    {
+      "type": "value",
+      "name": "tabindex",
+      "value": "0"
+    }
+  ],
+  "options": [
+    {
+      "name": "arrow",
+      "label": "Arrow style",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "None",
+          "value": ""
+        },
+        {
+          "label": "Arrow",
+          "value": "collapse-arrow"
+        },
+        {
+          "label": "Plus",
+          "value": "collapse-plus"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-collapse-title",
+      "tag": "div",
+      "classNames": "collapse-title text-xl font-medium",
+      "content": {
+        "type": "value",
+        "value": "Collapse title"
+      },
+      "userSelect": true
+    },
+    {
+      "id": "daisyui-collapse-content",
+      "tag": "div",
+      "classNames": "collapse-content",
+      "allowChildren": true,
+      "content": {
+        "type": "value",
+        "value": "Collapse detail"
+      },
+      "userSelect": true
+    }
+  ]
+}

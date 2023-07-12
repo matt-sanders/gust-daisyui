@@ -86,7 +86,7 @@ class Gust_Daisyui {
 			),
 			'data-display' => array(
 				'badge',
-				// 'collapse',
+				'collapse',
 				'kbd',
 				'loading',
 				'progress',
