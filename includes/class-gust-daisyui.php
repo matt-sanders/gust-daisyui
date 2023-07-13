@@ -96,6 +96,7 @@ class Gust_Daisyui {
 			'data-input'   => array(
 				'checkbox',
 				'radio',
+				'range',
 			),
 			'layout'       => array(
 				'artboard',

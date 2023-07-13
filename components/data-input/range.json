@@ -1,0 +1,108 @@
+{
+  "id": "daisyui-range",
+  "displayName": "Range",
+  "description": "Range slider is used to select a value by sliding a handle.",
+  "category": "Daisy UI / Data Input",
+  "tag": "div",
+  "classNames": "form-control",
+  "attributes": [
+    {
+      "type": "value",
+      "name": "data-name",
+      "value": "",
+      "prepopulate": "instanceId"
+    },
+    {
+      "type": "value",
+      "name": "data-value",
+      "value": "0"
+    },
+    {
+      "type": "value",
+      "name": "data-min",
+      "value": "0"
+    },
+    {
+      "type": "value",
+      "name": "data-max",
+      "value": "100"
+    },
+    {
+      "type": "value",
+      "name": "data-id",
+      "value": "",
+      "prepopulate": "instanceId"
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-range-label",
+      "tag": "label",
+      "classNames": "label cursor-pointer",
+      "children": [
+        {
+          "id": "daisyui-range-label-text",
+          "tag": "span",
+          "classNames": "label-text",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Label text"
+          },
+          "references": [
+            {
+              "updates": "attribute",
+              "name": "for",
+              "type": "attribute",
+              "target": "data-id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daisyui-range-input",
+      "tag": "input",
+      "classNames": "range",
+      "attributes": [
+        {
+          "type": "value",
+          "name": "type",
+          "value": "range"
+        }
+      ],
+      "references": [
+        {
+          "updates": "attribute",
+          "name": "name",
+          "type": "attribute",
+          "target": "data-name"
+        },
+        {
+          "updates": "attribute",
+          "name": "min",
+          "type": "attribute",
+          "target": "data-min"
+        },
+        {
+          "updates": "attribute",
+          "name": "max",
+          "type": "attribute",
+          "target": "data-max"
+        },
+        {
+          "updates": "attribute",
+          "name": "id",
+          "type": "attribute",
+          "target": "data-id"
+        },
+        {
+          "updates": "attribute",
+          "name": "value",
+          "type": "attribute",
+          "target": "data-value"
+        }
+      ]
+    }
+  ]
+}
