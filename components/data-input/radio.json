@@ -1,0 +1,66 @@
+{
+  "id": "daisyui-radio",
+  "displayName": "radio",
+  "description": "Radio buttons allow the user to select one option from a set.",
+  "category": "Daisy UI / Data Input",
+  "tag": "div",
+  "classNames": "form-control",
+  "attributes": [
+    {
+      "type": "value",
+      "name": "data-name",
+      "value": "",
+      "prepopulate": "instanceId"
+    },
+    {
+      "type": "value",
+      "name": "data-value",
+      "value": ""
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-radio-label",
+      "tag": "label",
+      "classNames": "label cursor-pointer",
+      "children": [
+        {
+          "id": "daisyui-radio-label-text",
+          "tag": "span",
+          "classNames": "label-text",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Label text"
+          }
+        },
+        {
+          "id": "daisyui-radio-input",
+          "tag": "input",
+          "classNames": "radio",
+          "attributes": [
+            {
+              "type": "value",
+              "name": "type",
+              "value": "radio"
+            }
+          ],
+          "references": [
+            {
+              "updates": "attribute",
+              "name": "name",
+              "type": "attribute",
+              "target": "data-name"
+            },
+            {
+              "updates": "attribute",
+              "name": "value",
+              "type": "attribute",
+              "target": "data-value"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
