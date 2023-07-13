@@ -93,6 +93,9 @@ class Gust_Daisyui {
 				'stats',
 				'tooltip',
 			),
+			'data-input'   => array(
+				'checkbox',
+			),
 			'layout'       => array(
 				'artboard',
 				'divider',

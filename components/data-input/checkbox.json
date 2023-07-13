@@ -1,0 +1,66 @@
+{
+  "id": "daisyui-checkbox",
+  "displayName": "Checkbox",
+  "description": "Checkboxes are used to select or deselect a value.",
+  "category": "Daisy UI / Data Input",
+  "tag": "div",
+  "classNames": "form-control",
+  "attributes": [
+    {
+      "type": "value",
+      "name": "data-name",
+      "value": "",
+      "prepopulate": "instanceId"
+    },
+    {
+      "type": "value",
+      "name": "data-value",
+      "value": ""
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-checkbox-label",
+      "tag": "label",
+      "classNames": "label cursor-pointer",
+      "children": [
+        {
+          "id": "daisyui-checkbox-label-text",
+          "tag": "span",
+          "classNames": "label-text",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Label text"
+          }
+        },
+        {
+          "id": "daisyui-checkbox-input",
+          "tag": "input",
+          "classNames": "checkbox",
+          "attributes": [
+            {
+              "type": "value",
+              "name": "type",
+              "value": "checkbox"
+            }
+          ],
+          "references": [
+            {
+              "updates": "attribute",
+              "name": "name",
+              "type": "attribute",
+              "target": "data-name"
+            },
+            {
+              "updates": "attribute",
+              "name": "value",
+              "type": "attribute",
+              "target": "data-value"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
