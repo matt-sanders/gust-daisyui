@@ -18,22 +18,78 @@
       "value": ""
     }
   ],
+  "options": [
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "radio-md"
+        },
+        {
+          "label": "xs",
+          "value": "radio-xs"
+        },
+        {
+          "label": "sm",
+          "value": "radio-sm"
+        },
+        {
+          "label": "lg",
+          "value": "radio-lg"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Primary",
+          "value": "radio-primary"
+        },
+        {
+          "label": "Seconday",
+          "value": "radio-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "radio-accent"
+        },
+        {
+          "label": "Info",
+          "value": "radio-info"
+        },
+        {
+          "label": "Success",
+          "value": "radio-success"
+        },
+        {
+          "label": "Warning",
+          "value": "radio-warning"
+        },
+        {
+          "label": "Error",
+          "value": "radio-error"
+        }
+      ]
+    }
+  ],
   "children": [
     {
       "id": "daisyui-radio-label",
       "tag": "label",
       "classNames": "label cursor-pointer",
       "children": [
-        {
-          "id": "daisyui-radio-label-text",
-          "tag": "span",
-          "classNames": "label-text",
-          "userSelect": true,
-          "content": {
-            "type": "value",
-            "value": "Label text"
-          }
-        },
         {
           "id": "daisyui-radio-input",
           "tag": "input",
@@ -57,8 +113,28 @@
               "name": "value",
               "type": "attribute",
               "target": "data-value"
+            },
+            {
+              "updates": "classNames",
+              "type": "option",
+              "target": "size"
+            },
+            {
+              "updates": "classNames",
+              "type": "option",
+              "target": "color"
             }
           ]
+        },
+        {
+          "id": "daisyui-radio-label-text",
+          "tag": "span",
+          "classNames": "label-text flex-1 ml-2",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Label text"
+          }
         }
       ]
     }
