@@ -34,6 +34,72 @@
       "prepopulate": "instanceId"
     }
   ],
+  "options": [
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "range-md"
+        },
+        {
+          "label": "xs",
+          "value": "range-xs"
+        },
+        {
+          "label": "sm",
+          "value": "range-sm"
+        },
+        {
+          "label": "lg",
+          "value": "range-lg"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Primary",
+          "value": "range-primary"
+        },
+        {
+          "label": "Seconday",
+          "value": "range-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "range-accent"
+        },
+        {
+          "label": "Info",
+          "value": "range-info"
+        },
+        {
+          "label": "Success",
+          "value": "range-success"
+        },
+        {
+          "label": "Warning",
+          "value": "range-warning"
+        },
+        {
+          "label": "Error",
+          "value": "range-error"
+        }
+      ]
+    }
+  ],
   "children": [
     {
       "id": "daisyui-range-label",
@@ -101,6 +167,16 @@
           "name": "value",
           "type": "attribute",
           "target": "data-value"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "size"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "color"
         }
       ]
     }
