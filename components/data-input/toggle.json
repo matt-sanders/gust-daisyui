@@ -1,0 +1,144 @@
+{
+  "id": "daisyui-toggle",
+  "displayName": "Toggle",
+  "description": "Toggle is a checkbox that is styled to look like a switch button.",
+  "category": "Daisy UI / Data Input",
+  "tag": "div",
+  "classNames": "form-control",
+  "options": [
+    {
+      "type": "text",
+      "label": "Value",
+      "name": "value",
+      "modify": "none",
+      "value": ""
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "toggle-md"
+        },
+        {
+          "label": "xs",
+          "value": "toggle-xs"
+        },
+        {
+          "label": "sm",
+          "value": "toggle-sm"
+        },
+        {
+          "label": "lg",
+          "value": "toggle-lg"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Primary",
+          "value": "toggle-primary"
+        },
+        {
+          "label": "Seconday",
+          "value": "toggle-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "toggle-accent"
+        },
+        {
+          "label": "Info",
+          "value": "toggle-info"
+        },
+        {
+          "label": "Success",
+          "value": "toggle-success"
+        },
+        {
+          "label": "Warning",
+          "value": "toggle-warning"
+        },
+        {
+          "label": "Error",
+          "value": "toggle-error"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "label": "Field name",
+      "name": "name",
+      "modify": "none",
+      "value": "",
+      "prepopulate": "instanceId"
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-toggle-label",
+      "tag": "label",
+      "classNames": "label cursor-pointer",
+      "children": [
+        {
+          "id": "daisyui-toggle-input",
+          "tag": "input",
+          "classNames": "toggle",
+          "attributes": [
+            {
+              "type": "value",
+              "name": "type",
+              "value": "checkbox"
+            }
+          ],
+          "references": [
+            {
+              "updates": "attribute",
+              "name": "name",
+              "type": "option",
+              "target": "name"
+            },
+            {
+              "updates": "attribute",
+              "name": "value",
+              "type": "option",
+              "target": "value"
+            },
+            {
+              "updates": "classNames",
+              "type": "option",
+              "target": "size"
+            },
+            {
+              "updates": "classNames",
+              "type": "option",
+              "target": "color"
+            }
+          ]
+        },
+        {
+          "id": "daisyui-toggle-label-text",
+          "tag": "span",
+          "classNames": "label-text flex-1 ml-2",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Label text"
+          }
+        }
+      ]
+    }
+  ]
+}
