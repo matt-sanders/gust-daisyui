@@ -7,6 +7,12 @@
   "classNames": "form control w-full",
   "options": [
     {
+      "name": "placeholder",
+      "type": "text",
+      "label": "Placeholder",
+      "modify": "none"
+    },
+    {
       "name": "type",
       "label": "Input type",
       "modify": "none",
@@ -142,6 +148,12 @@
       "tag": "input",
       "classNames": "input w-full",
       "references": [
+        {
+          "updates": "attribute",
+          "name": "placeholder",
+          "type": "option",
+          "target": "placeholder"
+        },
         {
           "updates": "attribute",
           "name": "name",
