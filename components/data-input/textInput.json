@@ -7,6 +7,26 @@
   "classNames": "form control w-full",
   "options": [
     {
+      "name": "type",
+      "label": "Input type",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "text"
+        },
+        {
+          "label": "email",
+          "value": "Email"
+        },
+        {
+          "label": "number",
+          "value": "Number"
+        }
+      ]
+    },
+    {
       "name": "size",
       "label": "Size",
       "modify": "none",
@@ -143,6 +163,12 @@
           "updates": "classNames",
           "type": "option",
           "target": "color"
+        },
+        {
+          "updates": "attribute",
+          "name": "type",
+          "type": "option",
+          "target": "type"
         }
       ]
     }
