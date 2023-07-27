@@ -1,0 +1,156 @@
+{
+  "id": "daisyui-select",
+  "displayName": "Select",
+  "description": "Select is used to pick a value from a list of options.",
+  "category": "Daisy UI / Data Input",
+  "tag": "div",
+  "classNames": "form control w-full",
+  "options": [
+    {
+      "name": "selectOptions",
+      "label": "Select options",
+      "modify": "none",
+      "type": "text",
+      "multiLine": true,
+      "hint": "Add one option per line. If needed, you can separate values and labels with an '='. E.g. value=Label"
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "select-md"
+        },
+        {
+          "label": "xs",
+          "value": "select-xs"
+        },
+        {
+          "label": "sm",
+          "value": "select-sm"
+        },
+        {
+          "label": "lg",
+          "value": "select-lg"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "select-bordered"
+        },
+        {
+          "label": "Ghost",
+          "value": "select-ghost"
+        },
+        {
+          "label": "Primary",
+          "value": "select-primary"
+        },
+        {
+          "label": "Seconday",
+          "value": "select-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "select-accent"
+        },
+        {
+          "label": "Info",
+          "value": "select-info"
+        },
+        {
+          "label": "Success",
+          "value": "select-success"
+        },
+        {
+          "label": "Warning",
+          "value": "select-warning"
+        },
+        {
+          "label": "Error",
+          "value": "select-error"
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "type": "value",
+      "name": "data-name",
+      "value": "",
+      "prepopulate": "instanceId"
+    },
+    {
+      "type": "value",
+      "name": "data-id",
+      "value": "",
+      "prepopulate": "instanceId"
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-select-label",
+      "tag": "label",
+      "classNames": "label",
+      "children": [
+        {
+          "id": "daisyui-select-label-text",
+          "tag": "span",
+          "classNames": "label-text",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Label text"
+          },
+          "references": [
+            {
+              "updates": "attribute",
+              "name": "for",
+              "type": "attribute",
+              "target": "data-id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daisyui-select-input",
+      "tag": "select",
+      "classNames": "select w-full",
+      "references": [
+        {
+          "updates": "attribute",
+          "name": "name",
+          "type": "attribute",
+          "target": "data-name"
+        },
+        {
+          "updates": "attribute",
+          "name": "id",
+          "type": "attribute",
+          "target": "data-id"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "size"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "color"
+        }
+      ]
+    }
+  ]
+}
