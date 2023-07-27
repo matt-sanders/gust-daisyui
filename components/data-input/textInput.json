@@ -1,0 +1,146 @@
+{
+  "id": "daisyui-text-input",
+  "displayName": "Input",
+  "description": "Text Input is a simple input field.",
+  "category": "Daisy UI / Data Input",
+  "tag": "div",
+  "classNames": "form control w-full",
+  "options": [
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "input-md"
+        },
+        {
+          "label": "xs",
+          "value": "input-xs"
+        },
+        {
+          "label": "sm",
+          "value": "input-sm"
+        },
+        {
+          "label": "lg",
+          "value": "input-lg"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "input-bordered"
+        },
+        {
+          "label": "Ghost",
+          "value": "input-ghost"
+        },
+        {
+          "label": "Primary",
+          "value": "input-primary"
+        },
+        {
+          "label": "Seconday",
+          "value": "input-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "input-accent"
+        },
+        {
+          "label": "Info",
+          "value": "input-info"
+        },
+        {
+          "label": "Success",
+          "value": "input-success"
+        },
+        {
+          "label": "Warning",
+          "value": "input-warning"
+        },
+        {
+          "label": "Error",
+          "value": "input-error"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "name": "name",
+      "value": "",
+      "prepopulate": "instanceId"
+    },
+    {
+      "type": "value",
+      "name": "id",
+      "value": "",
+      "prepopulate": "instanceId"
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-text-input-label",
+      "tag": "label",
+      "classNames": "label",
+      "children": [
+        {
+          "id": "daisyui-text-input-label-text",
+          "tag": "span",
+          "classNames": "label-text",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Label text"
+          },
+          "references": [
+            {
+              "updates": "attribute",
+              "name": "for",
+              "type": "attribute",
+              "target": "id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daisyui-text-input-input",
+      "tag": "input",
+      "classNames": "input w-full",
+      "references": [
+        {
+          "updates": "attribute",
+          "name": "name",
+          "type": "attribute",
+          "target": "name"
+        },
+        {
+          "updates": "attribute",
+          "name": "id",
+          "type": "attribute",
+          "target": "id"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "size"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "color"
+        }
+      ]
+    }
+  ]
+}

@@ -109,6 +109,7 @@ class Gust_Daisyui {
 				'radio',
 				'range',
 				'select',
+				'textInput',
 			),
 			'layout'       => array(
 				'artboard',
