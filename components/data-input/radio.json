@@ -5,20 +5,14 @@
   "category": "Daisy UI / Data Input",
   "tag": "div",
   "classNames": "form-control",
-  "attributes": [
-    {
-      "type": "value",
-      "name": "data-name",
-      "value": "",
-      "prepopulate": "instanceId"
-    },
-    {
-      "type": "value",
-      "name": "data-value",
-      "value": ""
-    }
-  ],
   "options": [
+    {
+      "type": "text",
+      "label": "Value",
+      "name": "value",
+      "modify": "none",
+      "value": ""
+    },
     {
       "name": "size",
       "label": "Size",
@@ -82,6 +76,14 @@
           "value": "radio-error"
         }
       ]
+    },
+    {
+      "type": "text",
+      "label": "Field name",
+      "name": "name",
+      "modify": "none",
+      "value": "",
+      "prepopulate": "instanceId"
     }
   ],
   "children": [
@@ -105,14 +107,14 @@
             {
               "updates": "attribute",
               "name": "name",
-              "type": "attribute",
-              "target": "data-name"
+              "type": "option",
+              "target": "name"
             },
             {
               "updates": "attribute",
               "name": "value",
-              "type": "attribute",
-              "target": "data-value"
+              "type": "option",
+              "target": "value"
             },
             {
               "updates": "classNames",

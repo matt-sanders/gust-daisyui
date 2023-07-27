@@ -81,18 +81,20 @@
           "value": "select-error"
         }
       ]
-    }
-  ],
-  "attributes": [
+    },
     {
-      "type": "value",
-      "name": "data-name",
+      "type": "text",
+      "label": "Field name",
+      "modify": "none",
+      "name": "name",
       "value": "",
       "prepopulate": "instanceId"
     },
     {
-      "type": "value",
-      "name": "data-id",
+      "type": "text",
+      "label": "Field ID",
+      "modify": "none",
+      "name": "id",
       "value": "",
       "prepopulate": "instanceId"
     }
@@ -102,6 +104,14 @@
       "id": "daisyui-select-label",
       "tag": "label",
       "classNames": "label",
+      "references": [
+        {
+          "updates": "attribute",
+          "name": "for",
+          "type": "option",
+          "target": "id"
+        }
+      ],
       "children": [
         {
           "id": "daisyui-select-label-text",
@@ -111,15 +121,7 @@
           "content": {
             "type": "value",
             "value": "Label text"
-          },
-          "references": [
-            {
-              "updates": "attribute",
-              "name": "for",
-              "type": "attribute",
-              "target": "data-id"
-            }
-          ]
+          }
         }
       ]
     },
@@ -131,14 +133,14 @@
         {
           "updates": "attribute",
           "name": "name",
-          "type": "attribute",
-          "target": "data-name"
+          "type": "option",
+          "target": "name"
         },
         {
           "updates": "attribute",
           "name": "id",
-          "type": "attribute",
-          "target": "data-id"
+          "type": "option",
+          "target": "id"
         },
         {
           "updates": "classNames",

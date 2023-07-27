@@ -75,13 +75,17 @@
       ]
     },
     {
-      "type": "value",
+      "type": "text",
+      "label": "Field name",
+      "modify": "none",
       "name": "name",
       "value": "",
       "prepopulate": "instanceId"
     },
     {
-      "type": "value",
+      "type": "text",
+      "label": "Field ID",
+      "modify": "none",
       "name": "id",
       "value": "",
       "prepopulate": "instanceId"
@@ -92,6 +96,14 @@
       "id": "daisyui-text-input-label",
       "tag": "label",
       "classNames": "label",
+      "references": [
+        {
+          "updates": "attribute",
+          "name": "for",
+          "type": "option",
+          "target": "id"
+        }
+      ],
       "children": [
         {
           "id": "daisyui-text-input-label-text",
@@ -101,15 +113,7 @@
           "content": {
             "type": "value",
             "value": "Label text"
-          },
-          "references": [
-            {
-              "updates": "attribute",
-              "name": "for",
-              "type": "attribute",
-              "target": "id"
-            }
-          ]
+          }
         }
       ]
     },
@@ -121,13 +125,13 @@
         {
           "updates": "attribute",
           "name": "name",
-          "type": "attribute",
+          "type": "option",
           "target": "name"
         },
         {
           "updates": "attribute",
           "name": "id",
-          "type": "attribute",
+          "type": "option",
           "target": "id"
         },
         {

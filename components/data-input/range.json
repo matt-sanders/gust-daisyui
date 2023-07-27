@@ -5,36 +5,28 @@
   "category": "Daisy UI / Data Input",
   "tag": "div",
   "classNames": "form-control",
-  "attributes": [
-    {
-      "type": "value",
-      "name": "data-name",
-      "value": "",
-      "prepopulate": "instanceId"
-    },
-    {
-      "type": "value",
-      "name": "data-value",
-      "value": "0"
-    },
-    {
-      "type": "value",
-      "name": "data-min",
-      "value": "0"
-    },
-    {
-      "type": "value",
-      "name": "data-max",
-      "value": "100"
-    },
-    {
-      "type": "value",
-      "name": "data-id",
-      "value": "",
-      "prepopulate": "instanceId"
-    }
-  ],
   "options": [
+    {
+      "type": "text",
+      "name": "value",
+      "label": "Field value",
+      "modify": "none",
+      "text": "0"
+    },
+    {
+      "type": "text",
+      "name": "min",
+      "label": "Min value",
+      "modify": "none",
+      "text": "0"
+    },
+    {
+      "type": "text",
+      "name": "max",
+      "label": "Max value",
+      "modify": "none",
+      "text": "100"
+    },
     {
       "name": "size",
       "label": "Size",
@@ -98,6 +90,22 @@
           "value": "range-error"
         }
       ]
+    },
+    {
+      "type": "text",
+      "label": "Field name",
+      "modify": "none",
+      "name": "name",
+      "value": "",
+      "prepopulate": "instanceId"
+    },
+    {
+      "type": "value",
+      "label": "Field ID",
+      "modify": "none",
+      "name": "id",
+      "value": "",
+      "prepopulate": "instanceId"
     }
   ],
   "children": [
@@ -105,6 +113,14 @@
       "id": "daisyui-range-label",
       "tag": "label",
       "classNames": "label cursor-pointer",
+      "references": [
+        {
+          "updates": "attribute",
+          "name": "for",
+          "type": "option",
+          "target": "id"
+        }
+      ],
       "children": [
         {
           "id": "daisyui-range-label-text",
@@ -114,15 +130,7 @@
           "content": {
             "type": "value",
             "value": "Label text"
-          },
-          "references": [
-            {
-              "updates": "attribute",
-              "name": "for",
-              "type": "attribute",
-              "target": "data-id"
-            }
-          ]
+          }
         }
       ]
     },
@@ -141,32 +149,32 @@
         {
           "updates": "attribute",
           "name": "name",
-          "type": "attribute",
-          "target": "data-name"
-        },
-        {
-          "updates": "attribute",
-          "name": "min",
-          "type": "attribute",
-          "target": "data-min"
-        },
-        {
-          "updates": "attribute",
-          "name": "max",
-          "type": "attribute",
-          "target": "data-max"
+          "type": "option",
+          "target": "name"
         },
         {
           "updates": "attribute",
           "name": "id",
-          "type": "attribute",
-          "target": "data-id"
+          "type": "option",
+          "target": "id"
+        },
+        {
+          "updates": "attribute",
+          "name": "min",
+          "type": "option",
+          "target": "min"
+        },
+        {
+          "updates": "attribute",
+          "name": "max",
+          "type": "option",
+          "target": "max"
         },
         {
           "updates": "attribute",
           "name": "value",
-          "type": "attribute",
-          "target": "data-value"
+          "type": "option",
+          "target": "value"
         },
         {
           "updates": "classNames",
