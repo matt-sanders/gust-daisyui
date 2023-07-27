@@ -1,0 +1,168 @@
+{
+  "id": "daisyui-textarea",
+  "displayName": "Textarea",
+  "description": "Textarea allows users to enter text in multiple lines.",
+  "category": "Daisy UI / Data Input",
+  "tag": "div",
+  "classNames": "form control w-full",
+  "options": [
+    {
+      "name": "placeholder",
+      "type": "text",
+      "label": "Placeholder",
+      "modify": "none"
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "textarea-md"
+        },
+        {
+          "label": "xs",
+          "value": "textarea-xs"
+        },
+        {
+          "label": "sm",
+          "value": "textarea-sm"
+        },
+        {
+          "label": "lg",
+          "value": "textarea-lg"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "textarea-bordered"
+        },
+        {
+          "label": "Ghost",
+          "value": "textarea-ghost"
+        },
+        {
+          "label": "Primary",
+          "value": "textarea-primary"
+        },
+        {
+          "label": "Seconday",
+          "value": "textarea-secondary"
+        },
+        {
+          "label": "Accent",
+          "value": "textarea-accent"
+        },
+        {
+          "label": "Info",
+          "value": "textarea-info"
+        },
+        {
+          "label": "Success",
+          "value": "textarea-success"
+        },
+        {
+          "label": "Warning",
+          "value": "textarea-warning"
+        },
+        {
+          "label": "Error",
+          "value": "textarea-error"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "label": "Field name",
+      "modify": "none",
+      "name": "name",
+      "value": "",
+      "prepopulate": "instanceId"
+    },
+    {
+      "type": "text",
+      "label": "Field ID",
+      "modify": "none",
+      "name": "id",
+      "value": "",
+      "prepopulate": "instanceId"
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-textarea-label",
+      "tag": "label",
+      "classNames": "label",
+      "references": [
+        {
+          "updates": "attribute",
+          "name": "for",
+          "type": "option",
+          "target": "id"
+        }
+      ],
+      "children": [
+        {
+          "id": "daisyui-textarea-label-text",
+          "tag": "span",
+          "classNames": "label-text",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Label text"
+          }
+        }
+      ]
+    },
+    {
+      "id": "daisyui-textarea-input",
+      "tag": "textarea",
+      "classNames": "textarea w-full",
+      "references": [
+        {
+          "updates": "attribute",
+          "name": "placeholder",
+          "type": "option",
+          "target": "placeholder"
+        },
+        {
+          "updates": "attribute",
+          "name": "name",
+          "type": "option",
+          "target": "name"
+        },
+        {
+          "updates": "attribute",
+          "name": "id",
+          "type": "option",
+          "target": "id"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "size"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "color"
+        },
+        {
+          "updates": "attribute",
+          "name": "type",
+          "type": "option",
+          "target": "type"
+        }
+      ]
+    }
+  ]
+}
