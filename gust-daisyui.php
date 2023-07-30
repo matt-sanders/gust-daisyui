@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Gust Daisy UI
- * Description: Add Daisy UI support to Gust.
+ * Description: Gust support for the Daisy UI component library.
  * Version: 0.0.1
  * Author: Gust
  * Author URI: https://www.getgust.com
