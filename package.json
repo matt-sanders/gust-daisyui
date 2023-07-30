@@ -1,0 +1,15 @@
+{
+  "name": "gust-daisyui",
+  "scripts": {
+    "bundle": "wp-scripts plugin-zip"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.9.0"
+  },
+  "files": [
+    "components",
+    "includes",
+    "gust-daisyui.php",
+    "readme.txt"
+  ]
+}
