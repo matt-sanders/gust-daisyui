@@ -7,6 +7,22 @@
   "classNames": "form control w-full",
   "options": [
     {
+      "name": "required",
+      "type": "select",
+      "label": "Required",
+      "modify": "none",
+      "options": [
+        {
+          "label": "No",
+          "value": "false"
+        },
+        {
+          "label": "Yes",
+          "value": "true"
+        }
+      ]
+    },
+    {
       "name": "placeholder",
       "type": "text",
       "label": "Placeholder",
@@ -148,6 +164,12 @@
       "tag": "input",
       "classNames": "input w-full",
       "references": [
+        {
+          "updates": "attribute",
+          "name": "required",
+          "type": "option",
+          "target": "required"
+        },
         {
           "updates": "attribute",
           "name": "placeholder",

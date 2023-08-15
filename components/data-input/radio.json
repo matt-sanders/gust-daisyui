@@ -14,6 +14,22 @@
       "value": ""
     },
     {
+      "name": "required",
+      "type": "select",
+      "label": "Required",
+      "modify": "none",
+      "options": [
+        {
+          "label": "No",
+          "value": "false"
+        },
+        {
+          "label": "Yes",
+          "value": "true"
+        }
+      ]
+    },
+    {
       "name": "size",
       "label": "Size",
       "modify": "none",
@@ -104,6 +120,12 @@
             }
           ],
           "references": [
+            {
+              "updates": "attribute",
+              "name": "required",
+              "type": "option",
+              "target": "required"
+            },
             {
               "updates": "attribute",
               "name": "name",

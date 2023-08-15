@@ -15,6 +15,22 @@
       "hint": "Add one option per line. If needed, you can separate values and labels with an '='. E.g. value=Label"
     },
     {
+      "name": "required",
+      "type": "select",
+      "label": "Required",
+      "modify": "none",
+      "options": [
+        {
+          "label": "No",
+          "value": "false"
+        },
+        {
+          "label": "Yes",
+          "value": "true"
+        }
+      ]
+    },
+    {
       "name": "size",
       "label": "Size",
       "modify": "none",
@@ -130,6 +146,12 @@
       "tag": "select",
       "classNames": "select w-full",
       "references": [
+        {
+          "updates": "attribute",
+          "name": "required",
+          "type": "option",
+          "target": "required"
+        },
         {
           "updates": "attribute",
           "name": "name",
