@@ -48,7 +48,7 @@ class Gust_Daisyui {
 	 * Gust Daisyui constructor
 	 */
 	public function __construct() {
-		 $this->define_constants();
+		$this->define_constants();
 		$this->includes();
 		$this->register_hooks();
 	}
@@ -71,8 +71,10 @@ class Gust_Daisyui {
 	 * Registers hooks
 	 */
 	private function register_hooks() {
-		 add_action( 'gust_register_components', [ $this, 'register_components' ] );
+		add_action( 'gust_register_components', [ $this, 'register_components' ] );
 		add_filter( 'gust_tag_pre_output', [ $this, 'tag_pre_output' ], 10, 5 );
+		add_filter( 'gust_settings', [ $this, 'add_settings' ] );
+		add_filter( 'language_attributes', [ $this, 'add_theme' ] );
 	}
 
 	/**
@@ -179,6 +181,47 @@ class Gust_Daisyui {
 			$options     .= '<option value="' . esc_attr( $value ) . '">' . esc_html( $label ) . '</option>';
 		}
 		return $options;
+	}
+
+	/**
+	 * Adds settings for Daisy UI
+	 *
+	 * @param array $settings The list of settings.
+	 */
+	public function add_settings( $settings ) {
+		$settings[] = array(
+			'name'     => 'daisy_ui',
+			'label'    => __( 'Daisy UI', 'gust-daisyui' ),
+			'settings' => array(
+				array(
+					'name'        => 'daisyui_theme',
+					'label'       => __( 'Theme', 'gust-daisyui' ),
+					'type'        => 'text',
+					'render_args' => array(
+						'description' => __( 'Enter the name of your chosen theme here. Make sure that it is also added to the Daisy UI themes section in the Tailwind config.', 'gust-daisyui' ),
+					),
+				),
+			),
+		);
+		return $settings;
+	}
+
+	/**
+	 * Adds the data-theme tag to the surrounding element
+	 *
+	 * @param string $attr a string of existing attributes.
+	 */
+	public function add_theme( $attr ) {
+		if ( ! class_exists( 'Gust' ) ) {
+			return $attr;
+		}
+
+		$theme = Gust::get_instance()->admin->get_option( 'daisyui_theme' );
+
+		if ( ! $theme ) {
+			return $attr;
+		}
+		return $attr . ' data-theme="' . $theme . '"';
 	}
 }
 Gust_Daisyui::instance();
