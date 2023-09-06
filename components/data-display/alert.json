@@ -1,0 +1,55 @@
+{
+  "id": "daisyui-alert",
+  "displayName": "Alert",
+  "description": "Alert informs users about important events.",
+  "category": "Daisy UI / Data Display",
+  "tag": "div",
+  "classNames": "alert",
+  "options": [
+    {
+      "name": "color",
+      "label": "Color",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Info",
+          "value": "alert-info"
+        },
+        {
+          "label": "Success",
+          "value": "alert-success"
+        },
+        {
+          "label": "Warning",
+          "value": "alert-warning"
+        },
+        {
+          "label": "Error",
+          "value": "alert-error"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-alert-icon",
+      "tag": "div",
+      "classNames": "shrink-0 w-6 h-6",
+      "allowChildren": true
+    },
+    {
+      "id": "daisyui-alert-content",
+      "tag": "div",
+      "userSelect": true,
+      "content": {
+        "type": "value",
+        "value": "Alert content"
+      }
+    }
+  ]
+}
