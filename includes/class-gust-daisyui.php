@@ -120,6 +120,9 @@ class Gust_Daisyui {
 				'artboard',
 				'divider',
 			),
+			'mockup'       => array(
+				'browser',
+			),
 		);
 
 		foreach ( $component_dirs as $component_dir => $components ) {

@@ -1,0 +1,33 @@
+{
+  "id": "daisyui-mockup-browser",
+  "displayName": "Browser mockup",
+  "description": "Browser mockup shows a box that looks like a browser window.",
+  "category": "Daisy UI / Mockup",
+  "tag": "div",
+  "classNames": "mockup-browser border border-base-300",
+  "children": [
+    {
+      "id": "daisyui-mockup-browser-toolbar",
+      "tag": "div",
+      "classNames": "mockup-browser-toolbar",
+      "children": [
+        {
+          "id": "daisyui-mockup-browser-toolbar-input",
+          "tag": "div",
+          "classNames": "input border border-base-300",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "https://www.getgust.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "daisyui-mockup-browser-body",
+      "tag": "div",
+      "classNames": "flex justify-center px-4 py-16 border-t border-base-300",
+      "allowChildren": true
+    }
+  ]
+}
