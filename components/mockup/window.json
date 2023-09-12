@@ -1,0 +1,16 @@
+{
+  "id": "daisyui-mockup-window",
+  "displayName": "Window mockup",
+  "description": "Window mockup shows a box that looks like an operating system window.",
+  "category": "Daisy UI / Mockup",
+  "tag": "div",
+  "classNames": "mockup-window border border-base-300",
+  "children": [
+    {
+      "id": "daisyui-mockup-window-body",
+      "tag": "div",
+      "classNames": "flex justify-center px-4 py-16 border-t border-base-300",
+      "allowChildren": true
+    }
+  ]
+}
