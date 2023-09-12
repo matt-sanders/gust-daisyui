@@ -1,0 +1,28 @@
+{
+  "id": "daisyui-mockup-phone",
+  "displayName": "Phone mockup",
+  "description": "Phone mockup shows a mockup of an iPhone.",
+  "category": "Daisy UI / Mockup",
+  "tag": "div",
+  "classNames": "mockup-phone",
+  "children": [
+    {
+      "id": "daisyui-mockup-phone-camera",
+      "tag": "div",
+      "classNames": "camera"
+    },
+    {
+      "id": "daisyui-mockup-phone-display",
+      "tag": "div",
+      "classNames": "display",
+      "children": [
+        {
+          "id": "daisyui-mockup-phone-body",
+          "tag": "div",
+          "classNames": "artboard artboard-demo phone-1",
+          "allowChildren": true
+        }
+      ]
+    }
+  ]
+}

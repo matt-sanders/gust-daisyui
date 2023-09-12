@@ -122,6 +122,7 @@ class Gust_Daisyui {
 			),
 			'mockup'       => array(
 				'browser',
+				'phone',
 			),
 		);
 
