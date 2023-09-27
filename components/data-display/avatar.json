@@ -1,0 +1,97 @@
+{
+  "id": "daisyui-avatar",
+  "displayName": "Avatar",
+  "description": "Avatars are used to show a thumbnail representation of an individual or business in the interface.",
+  "category": "Daisy UI / Data Display",
+  "tag": "div",
+  "classNames": "avatar",
+  "options": [
+    {
+      "name": "image",
+      "label": "Image",
+      "type": "image",
+      "modify": "none"
+    },
+    {
+      "name": "shape",
+      "label": "Shape",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "rounded-xl"
+        },
+        {
+          "label": "Circle",
+          "value": "rounded-full"
+        },
+        {
+          "label": "Squircle",
+          "value": "mask mask-squircle"
+        },
+        {
+          "label": "Hexagon",
+          "value": "mask mask-hexagon"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": "w-16 h-16"
+        },
+        {
+          "label": "Small",
+          "value": "w-8 h-8"
+        },
+        {
+          "label": "Large",
+          "value": "w-20 h-20"
+        },
+        {
+          "label": "XL",
+          "value": "w-32 h-32"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-avatar-wrapper",
+      "tag": "div",
+      "classNames": "bg-neutral-focus",
+      "references": [
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "size"
+        },
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "shape"
+        }
+      ],
+      "children": [
+        {
+          "id": "daisyui-avatar-img",
+          "tag": "img",
+          "references": [
+            {
+              "type": "option",
+              "updates": "attribute",
+              "name": "src",
+              "target": "image"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

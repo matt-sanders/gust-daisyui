@@ -99,6 +99,7 @@ class Gust_Daisyui {
 			),
 			'data-display' => array(
 				'alert',
+				'avatar',
 				'badge',
 				'collapse',
 				'kbd',
