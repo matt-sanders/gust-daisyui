@@ -98,6 +98,7 @@ class Gust_Daisyui {
 				'button',
 			),
 			'data-display' => array(
+				'accordion',
 				'alert',
 				'avatar',
 				'badge',

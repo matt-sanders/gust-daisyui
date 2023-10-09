@@ -1,0 +1,106 @@
+{
+  "id": "daisyui-accordion",
+  "displayName": "Accordion",
+  "description": "Accordion is used for showing and hiding content but only one item can stay open at a time.",
+  "category": "Daisy UI / Data Display",
+  "tag": "div",
+  "classNames": "space-y-2",
+  "hasRepeater": true,
+  "options": [
+    {
+      "name": "arrowType",
+      "label": "Arrow type",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "None",
+          "value": ""
+        },
+        {
+          "label": "Arrows",
+          "value": "collapse-arrow"
+        },
+        {
+          "label": "Plus",
+          "value": "collapse-plus"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "label": "Name",
+      "name": "name",
+      "modify": "none",
+      "value": "",
+      "prepopulate": "instanceId"
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-accordion-collapse",
+      "tag": "div",
+      "classNames": "collapse bg-base-200",
+      "useRepeater": true,
+      "editorStyles": {
+        "gridTemplateRows": "auto 1fr"
+      },
+      "references": [
+        {
+          "updates": "classNames",
+          "type": "option",
+          "target": "arrowType"
+        }
+      ],
+      "children": [
+        {
+          "id": "daisyui-accordion-collapse-input",
+          "tag": "input",
+          "editorStyles": {
+            "display": "none"
+          },
+          "attributes": [
+            {
+              "name": "type",
+              "type": "value",
+              "value": "radio"
+            }
+          ],
+          "references": [
+            {
+              "updates": "attribute",
+              "name": "name",
+              "type": "option",
+              "target": "name"
+            }
+          ]
+        },
+        {
+          "id": "daisyui-accordion-collapse-title",
+          "tag": "div",
+          "classNames": "collapse-title text-xl font-medium",
+          "allowRepeaterContent": true,
+          "content": {
+            "type": "value",
+            "value": "Accordion item"
+          }
+        },
+        {
+          "id": "daisyui-accordion-collapse-content",
+          "tag": "div",
+          "classNames": "collapse-content",
+          "allowRepeaterContent": true,
+          "content": {
+            "type": "value",
+            "value": "This is my content"
+          },
+          "editorStyles": {
+            "visibility": "visible",
+            "minHeight": "fit-content",
+            "paddingBottom": "1rem"
+          }
+        }
+      ]
+    }
+  ]
+}
