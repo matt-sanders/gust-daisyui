@@ -102,6 +102,7 @@ class Gust_Daisyui {
 				'alert',
 				'avatar',
 				'badge',
+				'card',
 				'collapse',
 				'kbd',
 				'loading',

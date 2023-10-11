@@ -1,0 +1,132 @@
+{
+  "id": "daisyui-card",
+  "displayName": "Card",
+  "description": "Cards are used to group and display content in a way that is easily readable.",
+  "category": "Daisy UI / Data Display",
+  "tag": "div",
+  "classNames": "card shadow-xl",
+  "options": [
+    {
+      "name": "image",
+      "label": "Image",
+      "modify": "none",
+      "type": "image"
+    },
+    {
+      "name": "cardPadding",
+      "label": "Card padding",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Compact",
+          "value": "card-compact"
+        }
+      ]
+    },
+    {
+      "name": "imagePosition",
+      "label": "Image position",
+      "modify": "className",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Underlay",
+          "value": "image-full"
+        },
+        {
+          "label": "Side",
+          "value": "card-side"
+        },
+        {
+          "label": "Side ( responsive )",
+          "value": "lg:card-side"
+        }
+      ]
+    },
+
+    {
+      "name": "textAlignment",
+      "label": "Text alignment",
+      "modify": "none",
+      "type": "select",
+      "options": [
+        {
+          "label": "Default",
+          "value": ""
+        },
+        {
+          "label": "Center",
+          "value": "text-center items-center"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "id": "daisyui-card-figure",
+      "tag": "figure",
+      "children": [
+        {
+          "id": "daisyui-card-figure-img",
+          "tag": "img",
+          "references": [
+            {
+              "type": "option",
+              "updates": "attribute",
+              "name": "src",
+              "target": "image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daisyui-card-body",
+      "tag": "div",
+      "classNames": "card-body",
+      "references": [
+        {
+          "type": "option",
+          "updates": "classNames",
+          "target": "textAlignment"
+        }
+      ],
+      "children": [
+        {
+          "id": "daisyui-card-title",
+          "tag": "h2",
+          "classNames": "card-title",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "Card title"
+          }
+        },
+        {
+          "id": "daisyui-card-content",
+          "tag": "div",
+          "userSelect": true,
+          "content": {
+            "type": "value",
+            "value": "This is the card body text."
+          }
+        },
+        {
+          "id": "daisyui-card-actions",
+          "tag": "div",
+          "classNames": "card-actions justify-end",
+          "allowChildren": true
+        }
+      ]
+    }
+  ]
+}
