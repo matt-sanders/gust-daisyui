@@ -12,10 +12,6 @@ defined( 'ABSPATH' ) || exit;
  */
 class Gust_Daisyui {
 
-
-
-
-
 	/**
 	 * The single instance of the class
 	 * 
@@ -230,7 +226,7 @@ class Gust_Daisyui {
 		if ( ! $theme ) {
 			return $attr;
 		}
-		return $attr . ' data-theme="' . $theme . '"';
+		return $attr . ' data-theme="' . esc_attr( $theme ) . '"';
 	}
 }
 Gust_Daisyui::instance();
