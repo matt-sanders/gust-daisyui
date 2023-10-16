@@ -132,6 +132,7 @@ class Gust_Daisyui {
 				if ( ! $content ) {
 					continue;
 				}
+				// complex input here is sanitized by Gust.
 				$layout = json_decode( $content, true );
 				if ( $layout ) {
 					$gust_components->register_component( $layout['id'], $layout );
