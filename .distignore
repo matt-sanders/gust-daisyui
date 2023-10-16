@@ -1,0 +1,14 @@
+/.wordpress-org
+/.git
+/.github
+/.husky
+/.vscode
+/node_modules
+.editorconfig
+.gitignore
+composer.json
+composer.lock
+package.json
+phpcs.xml
+README.md
+yarn.lock

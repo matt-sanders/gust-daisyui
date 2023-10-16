@@ -1,0 +1,32 @@
+name: Deploy to WordPress
+
+on:
+  # We'll run this action manually instead of triggering anything.
+  workflow_dispatch:
+    inputs:
+      generate-zip:
+        description: "Generate package zip file?"
+        default: false
+      dry-run:
+        description: "Run the deployment process without committing."
+        default: false
+
+jobs:
+  tag:
+    name: New tag
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      # - name: Build # Remove or modify this step as needed
+      #   run: |
+      #     yarn
+      #     yarn build
+      - name: WordPress Plugin Deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        with:
+          generate-zip: ${{ inputs.generate-zip }}
+          dry-run: ${{ inputs.dry-run }}
+        env:
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SLUG: gust-daisy-ui
