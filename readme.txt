@@ -4,7 +4,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Requires PHP: 7.2.5
 Stable tag: 0.0.1
-Tested up to: 6.2
+Tested up to: 6.3
 
 Gust support for the Daisy UI component library.
 

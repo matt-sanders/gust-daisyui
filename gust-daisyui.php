@@ -13,7 +13,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'GUST_DAISYUI_PLUGIN_VERSION', '0.1.5' );
+define( 'GUST_DAISYUI_PLUGIN_VERSION', '0.0.1' );
 
 if ( ! defined( 'GUST_DAISYUI_PLUGIN_FILE' ) ) {
 	define( 'GUST_DAISYUI_PLUGIN_FILE', __FILE__ );
